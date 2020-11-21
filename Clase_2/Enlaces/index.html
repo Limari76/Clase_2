@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces</title>
+</head>
+<body>
+    <!-- Enlaces:
+    Se crean con la etiqueta A (anchor Ancla en ingles)
+
+    TODA ETIQUETA anchor (a) necesita el atributo OBLIGATORIO href
+
+    Porque? el enlace tiene que llevarte a algun sitio, cierto?
+    ese destino se especifica con href
+    -->
+    <h3>Enlaces</h3>
+    <p>
+        <a href="http://brandhome.com.mx">Ir a la pagina de Brandhome</a>
+    </p>
+        <!-- TODO: una etiqueta anchor que me lleve a listas/index.html -->
+    <p><a href="../listas/index.html">Ir a Listas</a></p>
+
+    <!-- !Atributos opcionales -->
+    <!-- El mas comun es target:
+    
+    *Target
+        Se recomienda cuando el enlace  es externo
+        target="_blank" == Abrir en una pestaña nueva
+
+    *rel = se refiere al SEO
+        rel="nofollow" significa que la pagina de origen no le transmitira su SEO
+        a la plagina de destino
+
+        SEO = La autoridad que tienes ante Google, las paginas con mayor autoridad
+        son las que Google pone en los primeros resultados
+
+        Y Google considera cada enlace como un voto, si muchas paginas enlazan a una pagina,
+        esto google lo considera como mayores votos
+
+        Si quieres mejor posicion en Google, te conviene tener muchos enlaces de paginas
+        externas PEROOOO eso a veces ocasiona SPAM
+
+    *rel: noopener
+        rel="noopener" 
+        Evita la incrustacion de codigo malicioso al abrir enlaces en nuevas pestañas
+        (ejemplo:
+            Cuando abrimos un enlace con target="_blank", es muy remotamente probable
+            que algun atacante lo use para inyectar codigo malicioso)
+
+            Solo por eso se creo el atributo rel="noopener"
+    *download
+        !Download es un atributo BOOLEANO, no se requiere apertura y cierre
+        SOLO se descarga si la imagen esta en el directorio de tu proyecto
+        Descarga el recurso en vez de abrirlo
+    -->
+    <p>
+        <a href="http://brandhome.com.mx" target="_blank" 
+            >Ir a la pagina de Brandhome en una pestaña nueva</a>
+    </p>
+    <p>
+        <a href="logo.png">Abrir logo de Brandhome</a>
+    </p>
+    <p>
+        <a href="logo.png" download >Descargar logo de Brandhome</a>
+    </p>
+
+</body>
+</html>
